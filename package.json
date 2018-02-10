@@ -1,0 +1,35 @@
+{
+  "name": "flow-engine",
+  "version": "1.0.0",
+  "description": "A flow engine is an application that executes a flow consisting of several linked rules.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html -p 3000",
+    "test": "mocha index.test.js --require setup.js --require babel-register --recursive --watch",
+    "start": "npm-run-all -p dev test",
+    "build": "parcel build index.html --no-minify --public-url /"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runesam/flow-engine.git"
+  },
+  "author": "Sam Ewdala",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/runesam/flow-engine/issues"
+  },
+  "homepage": "https://github.com/runesam/flow-engine#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jsdom": "^11.6.2",
+    "mocha": "^5.0.0",
+    "npm-run-all": "^4.1.2",
+    "parcel-bundler": "^1.5.1"
+  }
+}
