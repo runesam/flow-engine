@@ -9,7 +9,6 @@ describe('The Flow Engine', () => {
     const input = document.getElementById('input_data').value;
     it('constructs', () => {
         const expected = {
-            basicStyles: 'font-weight: 600; font-size: 15px;',
             input,
             excutedRules: {},
         };

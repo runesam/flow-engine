@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel index.html -p 3000",
-    "test": "mocha index.test.js --require setup.js --require babel-register --recursive --watch",
+    "test": "mocha find ./engine -name '*test.js' --require setup.js --require babel-register --recursive --watch",
     "start": "npm-run-all -p dev test",
     "build": "parcel build index.html --no-minify --public-url /"
   },
